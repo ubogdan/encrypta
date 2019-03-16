@@ -1,7 +1,7 @@
 // Package encrypta encrypts text by public key
 //
 // Example
-//	pk, err := NewPublicKeyFromKeybase("sawadashota")
+//	pk, err := encrypta.NewPublicKeyFromKeybase("sawadashota")
 //	if err != nil {
 //		// error handling
 //	}
@@ -12,6 +12,7 @@
 //	}
 //
 //	fmt.Println(enc.Base64Encode())
+//	// Stdout base64 encoded encrypted text
 //
 // To decode this, private key holder executes following command
 //	$ go run main.go | base64 --decode | keybase pgp decrypt
