@@ -126,7 +126,7 @@ func newTestClient(fn RoundTripFunc) *http.Client {
 }
 
 // client for testing normal response
-// *http.Response: only give value when you want customize reponse
+// *http.Response: only give value when you want customize response
 func client(t *testing.T, respBody string) *http.Client {
 	t.Helper()
 

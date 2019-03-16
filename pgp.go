@@ -89,7 +89,7 @@ func NewPublicKeyFromURL(publicKeyURL string, opts ...Option) (EncryptionKey, er
 	return NewPublicKey(key)
 }
 
-// NewPublicKeyFromURL fetches public key from given Keybase's username and returns encryption key
+// NewPublicKeyFromKeybase fetches public key from given Keybase's username and returns encryption key
 func NewPublicKeyFromKeybase(username string, opts ...Option) (EncryptionKey, error) {
 	publicKeyURL := fmt.Sprintf("https://keybase.io/%s/pgp_keys.asc", username)
 	return NewPublicKeyFromURL(publicKeyURL, opts...)
